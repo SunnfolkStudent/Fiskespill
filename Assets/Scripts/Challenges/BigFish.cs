@@ -11,6 +11,7 @@ public class BigFish : MonoBehaviour {
 
 	void Awake() {
 		health = startingHealth;
+		transform.position = new Vector3(startPosition.x, startPosition.y, 0.0f);
 	}
 
     void FixedUpdate() {
