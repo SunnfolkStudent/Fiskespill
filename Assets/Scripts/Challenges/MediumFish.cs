@@ -24,9 +24,20 @@ public class MediumFish : MonoBehaviour
             transform.localScale = new Vector2(transform.localScale.x * -1f, 1f);
         }
     }
+
+    private void FixedUpdate()
+    {
+        _rigidbody2D.linearVelocityX = swimSpeed;
+    }
     
     private bool DetectedWall()
     {
         return Physics2D.OverlapCircle(wallCheck.position, 0.1f, whatIsWall);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(wallCheck.position, 0.1f);
     }
 }

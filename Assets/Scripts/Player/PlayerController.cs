@@ -20,5 +20,16 @@ public class PlayerController : MonoBehaviour
             fishSize++;
         }
     }
-    
+
+    public void GameOver()
+    {
+        print("GAME OVER!!!!!!");
+        Application.Quit();
+    }
+
+    public void YouWon()
+    {
+        print("YOU WON! :))))");
+        Application.Quit();
+    }
 }
