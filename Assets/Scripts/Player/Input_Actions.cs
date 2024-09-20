@@ -15,7 +15,7 @@ public class Input_Actions : MonoBehaviour
 
     private void Awake() { _inputActions = new InputSystem_Actions(); }
     
-    private void OnEnable () { _inputActions.Enable(); _inputActions.Player.Enable(); }
+    public void OnEnable () { _inputActions.Enable(); _inputActions.Player.Enable(); }
     
-    private void OnDisable() { _inputActions.Disable(); }
+    public void OnDisable() { _inputActions.Disable(); }
 }
