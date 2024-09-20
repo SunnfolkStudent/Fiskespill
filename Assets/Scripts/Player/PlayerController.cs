@@ -24,12 +24,20 @@ public class PlayerController : MonoBehaviour
     public void GameOver()
     {
         print("GAME OVER!!!!!!");
-        Application.Quit();
+        StopProgram();
     }
 
     public void YouWon()
     {
         print("YOU WON! :))))");
-        Application.Quit();
+        StopProgram();
     }
+
+	void StopProgram() {
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+	}
 }

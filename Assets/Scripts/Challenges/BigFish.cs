@@ -23,7 +23,7 @@ public class BigFish : MonoBehaviour {
 		PlayerController[] players = Object.FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
 		if (players.Length < 1) {
 			Debug.LogError("Found no player! Please create one. Also remember to tag it!");
-			Application.Quit();
+			StopProgram();
 		}
 
 		player = players[0];
@@ -49,5 +49,13 @@ public class BigFish : MonoBehaviour {
 		Gizmos.DrawWireSphere(maxHPPosition, 0.25f);
 		Gizmos.DrawWireSphere(minHPPosition, 0.25f);
 		Gizmos.DrawLine(maxHPPosition, minHPPosition);
+	}
+
+	void StopProgram() {
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
 	}
 }
