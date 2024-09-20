@@ -30,8 +30,8 @@ public class FishSpawner : MonoBehaviour {
 
 			Vector3 fishPosition = transform.position;
 
-			fishPosition.x = Random.Range(spawnerAreaBottomLeftCorner.x, spawnerAreaTopRightCorner.x);
-			fishPosition.y = Random.Range(spawnerAreaBottomLeftCorner.y, spawnerAreaTopRightCorner.y);
+			fishPosition.x += Random.Range(spawnerAreaBottomLeftCorner.x, spawnerAreaTopRightCorner.x);
+			fishPosition.y += Random.Range(spawnerAreaBottomLeftCorner.y, spawnerAreaTopRightCorner.y);
 
 			// TODO: Check if the new fish position is colliding with anything.
 
