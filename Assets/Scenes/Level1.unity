@@ -555,6 +555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumWaitTime: 0
   maximumWaitTime: 0
+  spawnerAreaBottomLeftCorner: {x: -1, y: -1}
+  spawnerAreaTopRightCorner: {x: 1, y: 1}
   fishTypes: []
 --- !u!4 &655690695
 Transform:
@@ -565,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 655690693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -738,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swimSpeed: 5
   fishSize: 1
+  damageCooldown: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
