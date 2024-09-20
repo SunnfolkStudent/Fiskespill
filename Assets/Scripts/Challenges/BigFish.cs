@@ -6,7 +6,7 @@ public class BigFish : MonoBehaviour {
 	public float startingHealth = 50.0f;
 	public float healingSpeed = 0.1f;
 
-	[Space(10)]
+	[Space(5)]
 	public Vector2 maxHPPosition;
 	public Vector2 minHPPosition;
 
