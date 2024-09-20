@@ -9,6 +9,11 @@ public class FishSpawner : MonoBehaviour {
 
 	void Awake() {
 		timer = Random.Range(minimumWaitTime, maximumWaitTime);
+
+		if (fishTypes.Length == 0) {
+			Debug.LogError("No fish types added in fish spawner! Make sure the fish type list is not empty!");
+			Object.Destroy(this);
+		}
 	}
 
 	void Update() {
