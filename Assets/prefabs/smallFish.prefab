@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3094980951167648646}
   m_Layer: 0
   m_Name: smallFish
-  m_TagString: Untagged
+  m_TagString: Small Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,8 +169,8 @@ MonoBehaviour:
   swimSpeed: -0.5
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 0
-  wallCheck: {fileID: 0}
+    m_Bits: 8
+  wallCheck: {fileID: 5318956928240234346}
 --- !u!1 &4646709962745267633
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ Transform:
   m_GameObject: {fileID: 4646709962745267633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.21, y: 0, z: 0}
+  m_LocalPosition: {x: -3.41, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
