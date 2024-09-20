@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  startingHealth: 100
+  startingHealth: 50
   healingSpeed: 0.1
   maxHPPosition: {x: 0, y: 0}
   minHPPosition: {x: 0, y: 0}
