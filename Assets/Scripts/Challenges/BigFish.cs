@@ -22,7 +22,7 @@ public class BigFish : MonoBehaviour {
 
 		PlayerController[] players = Object.FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
 		if (players.Length < 1) {
-			Debug.LogError("Found no player! Please create one.");
+			Debug.LogError("Found no player! Please create one. Also remember to tag it!");
 			Application.Quit();
 		}
 
@@ -38,13 +38,9 @@ public class BigFish : MonoBehaviour {
 		transform.position = new Vector3(new_position.x, new_position.y, 0.0f);
 
 		if (health >= maxHealth) {
-			//player.GameOver();
-			print("GAME OVER!!!!!!");
-			Application.Quit();
+			player.GameOver();
 		} else if (health <= 0.0f) {
-			//player.YouWon();
-			print("YOU WON! :))))");
-			Application.Quit();
+			player.YouWon();
 		}
     }
 
