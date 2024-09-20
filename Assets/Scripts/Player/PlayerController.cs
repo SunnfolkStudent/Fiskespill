@@ -51,13 +51,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //TakeDamage should, hypothetically speaking, lock player's controls and sink the player towards the big fish for a few seconds
+    //After a few seconds, it will unlock the controls and the player can control again
+    //Sadly, at the writing moment, I got burnt out due to a certain unforeseen circumstance...
     private void TakeDamage()
     {
         _input.OnDisable();
-        if (Time.time > _damageCooldownTimer)
-        {
-            _damageCooldownTimer = Time.time + damageCooldown;
-        }
+        //NOT FINISHED
         _input.OnEnable();
     }
     
