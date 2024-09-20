@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class FishSpawner : MonoBehaviour {
-	public GameObject[] fishTypes;
 	public float minimumWaitTime;
 	public float maximumWaitTime;
+	public GameObject[] fishTypes;
 
 	float timer;
 
