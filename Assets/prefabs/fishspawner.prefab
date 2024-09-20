@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumWaitTime: 1
   maximumWaitTime: 5
+  spawnerAreaBottomLeftCorner: {x: 1, y: 2}
+  spawnerAreaTopRightCorner: {x: 2, y: 1}
   fishTypes:
   - {fileID: 0}
   - {fileID: 0}

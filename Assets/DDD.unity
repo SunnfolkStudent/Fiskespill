@@ -425,6 +425,14 @@ PrefabInstance:
       propertyPath: 'fishTypes.Array.data[1]'
       value: 
       objectReference: {fileID: 515338615}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaTopRightCorner.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaBottomLeftCorner.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2435785105577638153, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
       propertyPath: m_Name
       value: fishspawner (6)
@@ -665,6 +673,22 @@ PrefabInstance:
       propertyPath: 'fishTypes.Array.data[1]'
       value: 
       objectReference: {fileID: 515338615}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaTopRightCorner.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaTopRightCorner.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaBottomLeftCorner.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044413105785534544, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
+      propertyPath: spawnerAreaBottomLeftCorner.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2435785105577638153, guid: 6e175a07128eeca4e89c131ef27ffa1c, type: 3}
       propertyPath: m_Name
       value: fishspawner (2)
