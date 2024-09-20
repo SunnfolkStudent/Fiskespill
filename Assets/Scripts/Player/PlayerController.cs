@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             fishSize++;
+        } else if (other.gameObject.CompareTag("Death"))
+        {
+            GameOver();
         }
     }
 
