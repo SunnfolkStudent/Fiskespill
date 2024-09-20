@@ -1,6 +1,10 @@
 using UnityEngine;
 
 public class FishSpawner : MonoBehaviour {
+	public int maxSpawnReTries = 50;
+	public LayerMask whatIsGround;
+	public float spawnClearanceRadius = 0.5f;
+
 	public float minimumWaitTime;
 	public float maximumWaitTime;
 
@@ -29,11 +33,16 @@ public class FishSpawner : MonoBehaviour {
 			timer = Random.Range(minimumWaitTime, maximumWaitTime);
 
 			Vector3 fishPosition = transform.position;
+			for (int i = 0; i < maxSpawnReTries; ++i) {
+				fishPosition = transform.position;
 
-			fishPosition.x += Random.Range(spawnerAreaBottomLeftCorner.x, spawnerAreaTopRightCorner.x);
-			fishPosition.y += Random.Range(spawnerAreaBottomLeftCorner.y, spawnerAreaTopRightCorner.y);
+				fishPosition.x += Random.Range(spawnerAreaBottomLeftCorner.x, spawnerAreaTopRightCorner.x);
+				fishPosition.y += Random.Range(spawnerAreaBottomLeftCorner.y, spawnerAreaTopRightCorner.y);
 
-			// TODO: Check if the new fish position is colliding with anything.
+				if (!Physics2D.OverlapCircle(fishPosition, spawnClearanceRadius, whatIsGround)) {
+					break;
+				}
+			}
 
 			Instantiate(fishTypes[Random.Range(0, fishTypes.Length - 1)],
 			            fishPosition, Quaternion.identity);
