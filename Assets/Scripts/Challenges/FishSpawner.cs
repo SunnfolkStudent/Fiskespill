@@ -39,4 +39,16 @@ public class FishSpawner : MonoBehaviour {
 			            fishPosition, Quaternion.identity);
 		}
 	}
+
+	void OnDrawGizmos() {
+		Vector3 areaSize = new Vector3(
+			spawnerAreaBottomLeftCorner.x - spawnerAreaTopRightCorner.x,
+			spawnerAreaBottomLeftCorner.y - spawnerAreaTopRightCorner.y,
+			1.0f
+		);
+
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireCube(transform.position, areaSize);
+		Gizmos.DrawWireSphere(transform.position, 0.25f);
+	}
 }
