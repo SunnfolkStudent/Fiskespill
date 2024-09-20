@@ -20,13 +20,18 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D.linearVelocityY = _input.Vertical * swimSpeed;
     }
     
-    private void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Small Fish"))
         {
             Destroy(other.gameObject);
             fishSize++;
-        } else if (other.gameObject.CompareTag("Death"))
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Death"))
         {
             GameOver();
         }
