@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Small Fish
+  - Death
   layers:
   - Default
   - TransparentFX
