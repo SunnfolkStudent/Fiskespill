@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1621880166265372779}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 9040560247815795714}
   - component: {fileID: 3826262773071470127}
   - component: {fileID: 8587009756147414755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mediumFish
   m_TagString: Medium Fish
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3826262773071470127
 MonoBehaviour:
   m_ObjectHideFlags: 0
